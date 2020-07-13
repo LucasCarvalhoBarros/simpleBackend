@@ -19,16 +19,8 @@ Sample response body: `{"result": 3}`
 
 - Add a Swagger 3 documentation to the previous endpoint
 
-### 3) JPA and Adapters
-
-- Map a entity Client to a table `T_CLIENT` with the follow collums and attributes: `id, name, age` (all client attributes are required, the name shoud have a min of 5 character and a max of 50).
-
-  Create the follow API Services:
-
-- POST on `/clients` that create a client (no return needed)
-- GET on `/clients/{id}` that return a client by id, shoud return error 404 if the client not exists.
-- PUT on `/clients/{id}` that update a client (the id shoud not be changed, validate if the client exist, no return needed)
-- GET on `/clients` that return all the clients, with the optional query parameter `minAge` that will filter to return just the clients with age equals or greater the same
+### 3) Connect WebService and use Redis
+- Mock connections to webservice(CWS) and use Redis to save the perennial informations
 
 #### 3.1) Entities relationships, ZonedDateTime converter, Json Formater
 
