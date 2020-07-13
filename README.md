@@ -15,9 +15,9 @@ or `Hello world` if the parameter is not sent.
 Sample request body: `{"a": 1, "b": 2}` (all tthe fields are required)
 Sample response body: `{"result": 3}`
 
-#### 2.1) Swagger
+#### 2.1) Swagger 3
 
-- Add a Swagger documentation to the previous endpoint
+- Add a Swagger 3 documentation to the previous endpoint
 
 ### 3) JPA and Adapters
 
@@ -55,21 +55,12 @@ Sample response body: `{"result": 3}`
 #### 4.4) Repository Tests
 - Make unit tests for the repositories of previous APIS
 
-### 5) Remote API (Feign)
-- Make a API service /orders that make a request to the previous API `/clients` and for each client make a request for teh API `/clients/{id}/orders` and build a response with the all the clients with all their orders
-
-### 6) Extras to Understand
+### 5) Remote API (Use gRPC) 
+- Use https://grpc.io/
 
 #### 6.1) Lombok
 - Data, Builders, Value
 - Logs
 
-#### 6.2) RabbitMQ
-- Consumer
-- Producer
-
-#### 6.3) OAuth
+#### 6.3) OAuth2
 - Authentication
-
-#### 6.4) Hystrix
-- How Circuit Break works
